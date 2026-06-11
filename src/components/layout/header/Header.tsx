@@ -4,9 +4,9 @@ const Header: React.FC = () => {
   return (
     <div className="border-b border-gray-200">
       <header className="max-w-7xl mx-auto flex justify-between p-4">   
-        <div className="font-semibold text-blue-600 hover:text-gray-200 cursor-pointer text-lg">
+        {/* <div className="font-semibold text-blue-600 hover:text-gray-200 cursor-pointer text-lg">
           haikalsamari
-        </div>
+        </div> */}
 
         <nav className="flex gap-6">
           <a
