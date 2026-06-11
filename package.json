@@ -10,7 +10,7 @@
     "deploy": "gh-pages -d out",
     "predeploy": "npm run build"
   },
-  "homepage": "https://haikalsamari.github.io/me",
+  "homepage": "https://haikalsamari.github.io",
   "dependencies": {
     "@radix-ui/react-navigation-menu": "^1.2.2",
     "@radix-ui/react-slot": "^1.1.1",
