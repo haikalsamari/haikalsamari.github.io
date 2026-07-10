@@ -6,7 +6,7 @@ interface SectionProps {
 const Section: React.FC<SectionProps> = ({ children, className = '' }) => {
     return (
         <div className={`min-h-[30vh] sm:min-h-[40vh] ${className}`}>
-            <div className="max-w-7xl mx-auto">
+            <div className="max-w-5xl mx-auto">
                 <section className="h-full">{children}</section>
             </div>
         </div>

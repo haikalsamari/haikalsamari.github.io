@@ -5,6 +5,7 @@ import CardComponents from "./CardProject";
 interface Repo {
     id: number;
     name: string;
+    description: string;
     html_url: string;
 }
 
@@ -20,7 +21,7 @@ const Project: React.FC = () => {
                 if (!response.ok) throw new Error('Response takde!');
 
                 const data = await response.json();
-
+                console.log(data);
                 setRepos(data);
             } catch (error) {
                 console.error('Tak dapat nak fetch repos:', error);
@@ -35,13 +36,13 @@ const Project: React.FC = () => {
     const renderedRepos = repos.map((repo) => {
         const matchedName = projectList.find(project => project.name === repo.name);
         if (matchedName) {
-            return <CardComponents key={repo.id} name={repo.name} repo_url={repo.html_url} imagePath={matchedName.imagePath}/>;
+            return <CardComponents key={repo.id} name={repo.name} description={repo.description} repo_url={repo.html_url} imagePath={matchedName.imagePath} platform={matchedName.platform} status={matchedName.status} liveUrl={matchedName.liveUrl}/>;
         }
         
     });
 
     return (
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 mt-4">    
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 mt-4">    
             {renderedRepos}
         </div>
     );

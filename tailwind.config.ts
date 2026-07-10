@@ -15,7 +15,16 @@ export default {
         accent: '#9333EA', // Custom accent color
       },
       fontFamily: {
-        sans: ['Poppins', 'Lato', 'sans-serif'],  
+        sans: ['Space Grotesk', 'sans-serif'],
+      },
+      keyframes: {
+        fadeInUp: {
+          '0%': { opacity: '0', transform: 'translateY(16px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+      },
+      animation: {
+        fadeInUp: 'fadeInUp 0.6s ease-out both',
       },
     },
   },

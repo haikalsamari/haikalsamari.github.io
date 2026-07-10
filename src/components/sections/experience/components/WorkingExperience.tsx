@@ -3,7 +3,7 @@ import CardExperience from "./CardExperience";
 
 const WorkingExperiences: React.FC = () => {
     return (
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 mt-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 mt-4">
             {experience.map((e, index) => (
                 <div key={index} className="flex flex-col md:flex-col items-start md:items-start">
                     <CardExperience 

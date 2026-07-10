@@ -16,13 +16,15 @@ const App: React.FC = () => {
           <About />
         </Section>
 
-        <Section className="mt-20">
-          <Experience />
-        </Section>
+        <div className="mt-15 bg-gray-100 py-10">
+          <Section>
+            <Experience />
+          </Section>
 
-        <Section className="mt-20">
-          <Project />
-        </Section>
+          <Section className="mt-20">
+            <Project />
+          </Section>
+        </div>
 
         <Section className="mt-20">
           <Stacks />
