@@ -2,45 +2,38 @@
   "name": "online-portfolio",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
-    "deploy": "gh-pages -d out",
-    "predeploy": "npm run build"
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
   },
   "homepage": "https://haikalsamari.github.io",
   "dependencies": {
-    "@radix-ui/react-navigation-menu": "^1.2.2",
+    "@fontsource/inter": "^5.1.0",
     "@radix-ui/react-slot": "^1.1.1",
-    "@shadcn/ui": "^0.0.4",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
-    "firebase": "^11.1.0",
-    "lucide-react": "^0.468.0",
-    "next": "^16.2.6",
-    "online-portfolio": "file:",
     "react": "^19.2.6",
     "react-dom": "^19.2.6",
     "react-icons": "^5.4.0",
-    "tailwind-merge": "^2.6.0",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwind-merge": "^2.6.0"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3",
+    "@eslint/js": "^9",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@vitejs/plugin-react-swc": "^3.7.0",
     "eslint": "^9",
-    "eslint-config-next": "15.1.0",
-    "gh-pages": "^6.2.0",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "eslint-plugin-react-refresh": "^0.4.0",
+    "globals": "^15.0.0",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
-    "typescript": "^5"
-  },
-  "allowScripts": {
-    "protobufjs@7.6.2": true,
-    "es5-ext@0.10.64": true
+    "typescript": "^5",
+    "typescript-eslint": "^8.0.0",
+    "vite": "^6.0.0"
   }
 }

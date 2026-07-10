@@ -1,4 +1,3 @@
-'use client';
 import { useEffect, useState } from "react";
 import { projectList } from "@/components/sections/project/types/project";
 import CardComponents from "./CardProject";
@@ -10,7 +9,7 @@ interface Repo {
 }
 
 const Project: React.FC = () => {
-    const github_url = process.env.NEXT_PUBLIC_GITHUB_API_URL || 'https://api.github.com/users/haikalsamari/repos';
+    const github_url = import.meta.env.VITE_GITHUB_API_URL || 'https://api.github.com/users/haikalsamari/repos';
     const [repos, setRepos] = useState<Repo[]>([]);
     const [, setLoading] = useState(true);
 

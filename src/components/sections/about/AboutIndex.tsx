@@ -1,6 +1,4 @@
-"use client"
 import React, { useEffect, useState } from 'react';
-import Image from "next/image";
 
 const AboutPage: React.FC = () => {
   const [index, setIndex] = useState(0);
@@ -43,7 +41,7 @@ const AboutPage: React.FC = () => {
           </div>
         </div>
         <div className='flex items-center justify-center pr-0 sm:pr-5 md:pr-5 lg:pr-15 xl:pr-20'>
-          <Image
+          <img
             src={`/images/about.jpg`}
             height={400}
             width={400}

@@ -1,5 +1,4 @@
 import {stacks} from '@/components/sections/stack/types/stack';
-import Image from "next/image";
 
 const Stack: React.FC = () => {
     return (
@@ -9,13 +8,12 @@ const Stack: React.FC = () => {
                     key={index}
                     className="flex flex-col items-center bg-white p-4 transition-shadow"
                 >
-                    <Image
-                        src={stack.imageUrl} 
+                    <img
+                        src={stack.imageUrl}
                         alt={`${stack.name} logo`}
                         width={48}
                         height={48}
                         className="object-contain"
-                        priority
                     />
                     <p className="mt-4 text-center text-md font-semibold">{stack.name}</p>
                 </div>

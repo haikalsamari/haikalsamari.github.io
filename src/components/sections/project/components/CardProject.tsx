@@ -1,6 +1,5 @@
 import { Button } from "../../../ui/button";
 import { Card, CardTitle } from "../../../ui/card";
-import Image from "next/image";
 
 interface CardProps {
   name: string;
@@ -13,10 +12,10 @@ const CardProject: React.FC<CardProps> = ({ name, repo_url, imagePath}) => {
     return (
         <Card className="w-full min-h-[260px] md:min-h-[280px] lg:min-h-[300px] flex flex-col justify-between rounded-md">
             <div className="flex justify-center items-center pt-12"> 
-                <Image
+                <img
                     src={imagePath || `/images/available-face.png`}
                     alt="Default avatar"
-                    width={130} 
+                    width={130}
                     height={50}
                 />
             </div>
