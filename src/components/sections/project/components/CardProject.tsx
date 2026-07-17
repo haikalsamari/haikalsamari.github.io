@@ -44,16 +44,8 @@ const CardProject: React.FC<CardProps> = ({ name, description, repo_url, imagePa
                 <div className="pb-4">
                     <CardTitle className="text-md font-semibold">{name}</CardTitle>
                 </div>
-                <div className="pb-4">
-                    <CardTitle className="line-clamp-2 text-sm text-gray-500 font-medium">{description}</CardTitle>
-                </div>
                 <div>
-                    <Button
-                    className="p-4 w-full rounded-md font-semibold bg-blue-600 hover:bg-gray-200"
-                    onClick={() => window.open(`${repo_url}`, "_blank")}
-                    >
-                    Repository
-                    </Button>
+                    <CardTitle className="line-clamp-2 text-sm text-gray-500 font-medium">{description}</CardTitle>
                 </div>
             </div>
         </Card>
